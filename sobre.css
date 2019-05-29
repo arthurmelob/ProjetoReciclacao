@@ -6,9 +6,8 @@
 	font-family: 'Roboto Slab', serif;
 }
 /*-- Menu --*/
-
 .header__menu{
-	width: 100vw;
+	max-width: 100vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -25,7 +24,7 @@
 	width: 5vw;
 }
 .header__navBar{
-	width: 80%;
+	max-width: 100vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -34,13 +33,11 @@
 	font-weight: bold;
 	font-size: 20px;
 	color: #E67816;
-	margin-left: 50px;
+	margin-left: 40px;
 }
-
 /*-- Secondary menu --*/
-
 .header__secondMenu{
-	width: 100vw;
+	width: 100%;
 	height: 8vh;
 	display: flex;
 	justify-content: flex-end;
@@ -59,4 +56,78 @@
 	font-size: 16px;
 	color: #E67816;
 	margin: 15px;
+}
+/*-- Main --*/
+/*-- O que é --*/
+.containerMain__divDesc{
+	max-width: 100vw;
+	min-height: 79vh;
+	background-image: url("assets/fundohome.jpg");
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
+}
+.containerMain__divDesc__divText{
+	max-width: 20vw;
+	color: #FFF;
+}
+.containerMain__divDesc__divText__title{
+	max-width: 100%;
+	font-size: 60px;
+	margin-bottom: 40px;
+}
+.containerMain__divDesc__divText__parag{
+	max-width: 100%;
+	font-size: 15px;
+}
+.containerMain__divDesc__divVideo{
+	max-width: 100vw;
+	display: flex;
+	justify-content: flex-end;
+}
+.containerMain__divDesc__divVideo__video iframe{ 
+	max-width:100vw;
+}
+/*-- Antecedentes --*/
+.containerMain__divAntecedentes{
+	width: 100%;
+	min-height: 75vh;
+	background-color: rgba(51, 51, 51, 1);
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
+}
+.containerMain__divAntecedentes__divText{
+	width: 40%
+}
+.containerMain__divAntecedentes__divText__title{
+	color: rgba(133, 194, 38, 1);
+	font-size: 55px;
+	margin-bottom: 40px;
+}
+.containerMain__divAntecedentes__divText__parag{
+	color: #FFF;
+	font-size: 15px;
+}
+.containerMain__divAntecedentes__slide{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+.containerMain__divAntecedentes__slide img{
+	width: 80%
+
+}
+.containerMain__divAntecedentes__slide__setinhas{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+.containerMain__divAntecedentes__slide__setinhas a{
+	font-size: 30px;
+	color: rgba(230, 120, 22, 1);
 }
