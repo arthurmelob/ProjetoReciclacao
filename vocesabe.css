@@ -8,7 +8,40 @@
 
 /* -- Meio Ambiente -- */
 
+header{
+	height: 25vh;
+}
 
+/*-- Menu --*/
+
+.header__menu{
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+}
+.header__mainMenu{
+	width: 90vw;
+	height: 14vh;
+	display: flex;
+	justify-content: space-between;
+}
+.header__logoImg{
+	width: 5vw;
+}
+.header__navBar{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__navBar a{
+	font-weight: bold;
+	font-size: 24px;
+	color: #E67816;
+}
 
 /* -- Saúde -- */
 
