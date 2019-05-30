@@ -6,14 +6,11 @@
 	font-family: 'Roboto Slab', serif;
 }
 
-/* -- Meio Ambiente -- */
+/*-- header --*/
 
 header{
 	height: 25vh;
 }
-
-/*-- Menu --*/
-
 .header__menu{
 	width: 100vw;
 	display: flex;
@@ -42,6 +39,94 @@ header{
 	font-size: 24px;
 	color: #E67816;
 }
+
+/*-- footer --*/
+
+footer{
+	width: 100%;
+	background-color: #333333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer__box{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer__box h3{
+	width: 100%;
+	font-size: 28px;
+	color: #85C226;
+	margin: 5px 0 20px 0;
+}
+.footer__contact{
+	width: 25vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 50px 0 50px 0;
+}
+.contact__address{
+	width: 100%;
+	font-size: 14px;
+	color: #85C226;
+	margin: 10px 0 0 0;
+}
+.contact__phone{
+	width: 85%;
+	color: #85C226;
+	margin: 15px 0 5px 0;
+	font-size: 18px;
+}
+.contact__fb{
+	width: 85%;
+	color: #E67816;
+	margin: 15px 0 5px 0;
+	font-size: 18px;
+}
+.footer__contact img{
+	width: 30px;
+	margin: 15px 0 5px 0;
+	height: 30px;
+}
+.footer__projects{
+	width: 29vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.footer__projects p{
+	width: 100%;
+	color: #85C226;
+	font-size: 14px;
+	margin: 5px 0 5px 0;
+}
+.footer__partners{
+	width: 34vw;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.footer__partner h3{
+	width: 100%;
+}
+.footer__partners p{
+	width: 45%;
+	margin: 5px 0 5px 0;
+}
+.footer__partners a{
+	color: #E67816;
+	font-size: 16px;
+}
+
+/* -- Meio Ambiente -- */
+
+
 
 /* -- Saúde -- */
 
