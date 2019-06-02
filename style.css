@@ -212,38 +212,28 @@ main{
 
 /*-- main home --*/
 
-.container__sobre{
-	width: 100vw;
+.home__sobre{
+	width: 100%;
 	display: flex;
 	flex-direction:row;
 	justify-content: space-between;
 }
-.sobre__titulo{
-	width: 85%;
-	color: #00923F;
-	font-size: 44px;
-	margin: 70px 0 15px 0;
-}
-.sobre__paragrafo{
-	width: 85%;
-	margin: 15px 0 15px 0;
-	font-size: 18px;
-}
-.div__sobre--texto{
+.div__sobreText{
 	width: 50%;
 	display:flex;
 	flex-direction: column;
 	align-items: center;
 }
-.div__sobre--imagem{
-	width: 50%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding: 100px 0 50px 50px;
+.sobre__title{
+	width: 85%;
+	color: #00923F;
+	font-size: 44px;
+	margin: 70px 0 15px 0;
 }
-.div__sobre--imagem img{
-	height: 55vh;
+.sobre__text{
+	width: 85%;
+	margin: 15px 0 15px 0;
+	font-size: 18px;
 }
 .sobre__link{
 	width: 85%;
@@ -251,8 +241,317 @@ main{
 	font-size: 36px;
 	font-weight: bold;
 }
+.div__sobre--imagem{
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 100px 0 50px;
+}
+.div__sobre--imagem img{
+	height: 55vh;
+}
+.home__acoes{
+	width: 100%;
+	background-image: url(assets/fundo-acoes.jpg);
+	background-size: cover;
+	padding: 50px 0 50px 0;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.home__acoes:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(133, 194, 38, 0.8);
+	position:absolute;
+	top: 0;
+}
+.home__acoesLista--box{
+	width: 60vw;
+	padding: 50px 0 0 0;
+}
+.home__acoesTitle{
+	width: 100%;
+	color: white;
+	font-size: 44px;
+	position: relative;
+	margin: 0 0 20px 0;
+}
+.lista__acoes{
+	width: 35vw;
+	height: 450px;
+	background-position: center;
+	background-image: url(assets/Caixa_acoes.svg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.lista__acoesLinks{
+	font-weight: bold;
+	font-size: 32px;
+	color:#E67816;
+	margin: 17px 0 15px 20px;
+}
+.calendario__acoesBox{
+	width: 25vw;
+}
+.calendario__acoes{
+	width: 26vw;
+	height: 70vh;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	padding-top: 20px;
+}
+.calendario__acoesTitle{
+	width: 80%;
+	font-size: 24px;
+	color: #00923F;
+}
+.calendario__acoesCafe, .calendario__acoesEscola, .calendario__acoesMutirao, .calendario__acoesBingo, .calendario__acoesReuniao{
+	width: 80%;
+	height: 18%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.calendario__acoesCafe, .calendario__acoesEscola, .calendario__acoesMutirao, .calendario__acoesBingo{
+	border-bottom: solid 2px #CCE9DA;
+}
+.calendario__acoesData{
+	width: 20%;
+	height: 45%;
+	font-size: 48px;
+	color: #85C226;
+}
+.calendario__acoesMes{
+	width: 20%;
+	font-size: 26px;
+	color: #85C226;
+}
+.calendario__acoesEncontro{
+	width: 80%;
+	font-size: 15px;
+	font-weight: bold;
+	color: #85C226;
+	margin: 10px 0 0 0;
+}
+.calendario__acoesEndereço{
+	width: 80%;
+	font-size: 12px;
+	font-weight: bold;
+	color: #7AC49F;
+	margin: 10px 0 0 0;
+}
+.calendario__acoesHorario{
+	width: 80%;
+	font-size: 12px;
+	font-weight: bold;
+	color: #7AC49F;
+	margin: 10px 0 0 0;
+}
+@media(max-width: 1024px){
+	.home__acoesLista--box{
+		width: 45vw;
+	}
+	.calendario__acoesBox{
+		width: 36vw;
+	}
+	.lista__acoes{
+		width: 44vw;
+		height: 400px;
+	}
+	.lista__acoesLinks{
+		font-size: 27px;
+	}
+	.calendario__acoes{
+		width: 36vw;
+		height: 60vh;
+	}
+	.calendario__acoesData{
+		height: 50%;
+	}
+}
+.home__impacto{
+	background-color: #333333;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 100px 0 50px 0;
+}
+.home__impactoText{
+	width: 45vw; 
+}
+.home__impactoTitle{
+	color: #85C226;
+	font-size: 44px;
+}
+.home__impacto--text{
+	color: white;
+	font-size: 18px;
+	width: 35vw;
+	margin: 10px 0 10px 0;
+}
+.home__impactoGrafico{
+	width: 50vw;
+}
+.home__impactoGrafico img{
+	width: 100%;
+}
+.home__coleta{
+	width: 100%;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 100px 0 75px 0;
+}
+.home__coletaBox{
+	width: 39%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 0 0 10px;
+}
+.home__coletaText{
+	width: 100%;
+}
+.home__coleta--title{
+  	color: #00923F;
+  	font-size: 44px;
+}
+.home__coleta--subTitle{
+	width: 90%;
+	font-size: 24px;
+	color: #85C226;
+}
+.home__coletaLegenda{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+.home__coletaLegenda--text{
+	width: 86%;
+	font-size: 20px;
+	color: #E67816;
+	font-weight: bold;
+	text-align: right;
+}
+.home__coletaLegenda--greenCircle{
+	width: 30px;
+	height: 30px;
+	background-color: #00923F;
+	border-radius: 50%;
+	margin: 0 0 10px 20px;
+}
+.home__coletaLegenda--orangeCircle{
+	width: 30px;
+	height: 30px;
+	background-color: #E67816;
+	border-radius: 50%;
+	margin: 0 0 10px 20px;
+}
+.home__coletaImagem{
+	width: 55%;
+}
+.home__coletaImagem img{
+	width: 100%;
+	height: 100%;
+}
+.home__vocesabe{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 100px 0 50px 0;
+	background-color: #85C226;
+}
+.home__vocesabeText{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 0 20px 0;
+}
+.home__vocesabe--title{
+	width: 93%;
+	color: #FFFFFF;
+	font-size: 44px;
+}
+.home__vocesabe--subTitle{
+	width: 93%;
+	color: #00923F;
+	font-size: 24px;
+}
+.vocesabe__meioambiente{
+	width: 400px;
+	height: 400px;
+	background-image: url(assets/Crianças-no-Sítio-de-Seu-Hélio-2.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.vocesabe__saude{
+	width: 400px;
+	height: 400px;
+	background-image: url(assets/saude.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.vocesabe__consumo{
+	width: 400px;
+	height: 400px;
+	background-image: url(assets/consumoconsciente.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.vocesabe__meioambiente:before, .vocesabe__saude:before, .vocesabe__consumo:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(230, 120, 22, 0.4);
+	position: absolute;
+}
+.vocesabe__meioambiente a,.vocesabe__saude a, .vocesabe__consumo a{
+	width: 60%;
+	text-align: center;
+	font-size: 38px;
+	color: white;
+	font-weight: bold;
+	z-index: 1;
+}
+@media(max-width: 1024px){
+	.vocesabe__meioambiente,.vocesabe__saude, .vocesabe__consumo{
+		width: 300px;
+		height: 300px;
+	}
+}
 
 /*-- main sobre --*/
+
 
 /*-- O que é --*/
 
@@ -285,10 +584,9 @@ main{
 	display: flex;
 	justify-content: flex-end;
 }
-.containerMain__divDesc__divVideo__video iframe{ 
+.containerMain__divDesc__divVideo__video iframe{  
 	max-width:100vw;
 }
-
 /*-- Antecedentes --*/
 
 .containerMain__divAntecedentes{
@@ -329,6 +627,152 @@ main{
 .containerMain__divAntecedentes__slide__setinhas a{
 	font-size: 30px;
 	color: rgba(230, 120, 22, 1);
+}
+/*-- Objetivos --*/
+.containerMain__divObjetivos{
+	background-color: #FFF;
+	max-width: 100vw;
+	min-height: 70vh;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.containerMain__divObjetivos__tituloPrincipal{
+	height: 25%;
+	font-size: 55px;
+	margin: 10px;
+	color: #00923F;
+}
+.containerMain__divObjetivos__principal{
+	height: 45vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.containerMain__divObjetivos__principalGerais{
+	width: 40%;
+	min-height: 100%;
+	background-image: url(assets/1912173_900290656693146_5341338124391531915_n.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.containerMain__divObjetivos__principalGerais:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 146, 63, 0.8);
+	position: absolute;
+}
+.containerMain__divObjetivos__principalGerais img{
+	width: 70%;
+}
+.containerMain__divObjetivos__principalGerais h2{
+	font-size: 25px;
+	margin: 10px;
+	color: #FFF974;
+	position: relative;
+}
+.containerMain__divObjetivos__principalGerais p{
+	font-size: 20px;
+	max-width: 70%;
+	color: #FFF;
+	margin: 10px;
+	position: relative;
+}
+.containerMain__divObjetivos__principalEspecificos{
+	width: 40%;
+	min-height: 100%;
+	background-image: url(assets/fundo-acoes.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.containerMain__divObjetivos__principalEspecificos:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 146, 63, 0.8);
+	position: absolute;
+}
+.containerMain__divObjetivos__principalEspecificos img{
+	width: 70%;
+}
+.containerMain__divObjetivos__principalEspecificos h2{
+	font-size: 25px; 
+	max-width: 50%;
+	color: #FFF974;
+	margin: 10px;
+	position: relative;
+}
+.containerMain__divObjetivos__principalEspecificos p{
+	font-size: 20px;
+	max-width: 80%;
+	color: #FFF;
+	margin: 10px;
+	margin-bottom: 20px;
+	position: relative;
+}
+/*-- Ciclo Sustentável --*/
+.containerMain__divSustentavel{
+	background-color: #0E9347;
+	max-width: 100vw;
+	min-height: 70vh;
+	display: flex;
+	align-self: center;
+	
+}
+.containerMain__divSustentavel__principal{
+	height: auto;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.containerMain__divSustentavel__lineone{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.containerMain__divSustentavel__lineone p{
+	width: 15%;
+	color: #FFF974;
+	margin: 20px;
+	margin-top: 40px;
+}
+.containerMain__divSustentavel__linetwo{
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.containerMain__divSustentavel__linetwo h1{
+	width: 30%;
+	font-size: 55px;
+	text-align: center;
+	color: #FFF;
+	margin: 0 160px 0 160px;
+}
+.containerMain__divSustentavel__linetwo__setavertical{
+	width: 5vw;
+}
+.containerMain__divSustentavel__linethree{
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.containerMain__divSustentavel__linethree p{
+	width: 15%;
+	color: #FFF974;
+	margin: 20px;
+	margin-top: 50px;
+}
+.containerMain__divSustentavel__line__setalado{
+	width: 10vw;
 }
 
 /*-- main açoes --*/
@@ -809,7 +1253,7 @@ main{
 	background-color: #E67816;
 }
 .div__answerAlternatives p{
-	width: 90%;
+	width: 80%;
 	font-size: 18px;
 	color: white;
 	text-align: center;
@@ -820,27 +1264,145 @@ main{
 .div__answerTampa{
 	width: 150px;
 	height: 150px;
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-image: url(assets/tampa-de-garrafa-pet.jpg);
 	background-size: cover;
 }
+.div__answerTampa:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(230, 120, 22, 0.7);
+}
 .div__answerTampa p{
 	font-size: 24px;
 	color: white;
 	text-align: center;
+	z-index: 1;
+}
+.div__answerGarrafa{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(assets/garrafa.JPG);
+	background-size: cover;
+}
+.div__answerGarrafa:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(230, 120, 22, 0.7);
+}
+.div__answerGarrafa p{
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	z-index: 1;
+}
+.div__answerAgua{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(assets/agua.jpg);
+	background-size: cover;
+}
+.div__answerAgua p{
+	font-size: 24px;
+	color: white;
+	text-align: center;
+}
+.div__answerAreia{
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(assets/areia-grossa.png);
+	background-size: cover;
+}
+.div__answerAreia p{
+	font-size: 24px;
+	color: white;
+	text-align: center;
+}
+.div__answerBarro{
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(assets/barro.jpg);
+	background-size: cover;
+}
+.div__answerBarro p{
+	font-size: 24px;
+	color: white;
+	text-align: center;
+}
+.ambiente_Question-1,.ambiente_Question-2,.ambiente_Question-3,.ambiente_Question-4{
+	width: 100%;
 }
 
 /*-- saude --*/
 
-
-
+.saudeQuestion-1{
+	width: 100%;
+	padding: 0 200px 0 0;
+}
+.div__answerDoenca{
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-image: url(assets/rato.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.div__answerDoenca p{
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	z-index: 1;
+}
+.div__answerDoenca:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(230, 120, 22, 0.7);
+}
+.saudeQuestion-2{
+	width: 100%;
+}
+.saudeQuestion-2 h2{
+	width: 50vw;
+}
+.saudeQuestion-3{
+	width: 100%;
+}
+.saudeQuestion-4{
+	width: 100%;
+}
 /*-- consumo consciente --*/
 
 .consumoQuestion-1{
 	width: 100%;
-	padding: 0 200px 0 0;
+}
+.consumoQuestion-1 h2{
+	width: 48vw;
 }
 .div__answerRat, .div__answerCockroach{
 	width: 150px;
@@ -865,8 +1427,9 @@ main{
 .div__answerRat{
 	background-image: url(assets/rato.jpg);
 	background-size: cover;
+	background-position: center;
 }
-.div__answerRat:after{
+.div__answerRat:before{
 	content: '';
 	width: 100%;
 	height: 100%;
@@ -876,6 +1439,7 @@ main{
 .div__answerCockroach{
 	background-image: url(assets/barata.jpg);
 	background-size: cover;
+	background-position: center;
 }
 .div__answerCockroach:before{
 	content: '';
@@ -886,11 +1450,15 @@ main{
 }
 .consumoQuestion-2{
 	width: 100%;
-	padding: 0 247px 0 0;
+}
+.consumoQuestion-2 h2{
+	width: 48vw;
 }
 .consumoQuestion-3{
 	width: 100%;
-	padding: 0 285px 0 0;
+}
+.consumoQuestion-3 h2{
+	width: 43vw;
 }
 .div__answerTrash{
 	width: 150px;
@@ -901,6 +1469,7 @@ main{
 	align-items: center;
 	background-image: url(assets/lixeira.jpg);
 	background-size: cover;
+	background-position: center;
 }
 .div__answerTrash:before{
 	content: '';
