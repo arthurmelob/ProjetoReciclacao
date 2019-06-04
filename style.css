@@ -773,7 +773,7 @@ main{
 /*-- O que é --*/
 
 .containerMain__divDesc{
-	width: 100vw;
+	width: 100%;
 	min-height: 79vh;
 	background-image: url("assets/fundohome.jpg");
 	background-position: center;
@@ -907,7 +907,7 @@ main{
 
 .containerMain__divObjetivos{
 	background-color: #FFF;
-	width: 100vw;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -1043,7 +1043,7 @@ main{
 
 .containerMain__divSustentavel{
 	background-color: #0E9347;
-	width: 100vw;
+	width: 100%;
 	display: flex;
 	align-self: center;
 	padding: 100px 0 100px 0;
